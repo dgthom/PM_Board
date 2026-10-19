@@ -28,7 +28,7 @@ if not config_file.exists():
 with open(config_file, "r") as f:
     config = json.load(f)
 
-
+project_store = Path(config["project_store"])
 
 
 Schedule_df = pd.DataFrame(columns=["Task Number", "Description", "Planned Start", "Planned End","Duration", "Actual Start", "Actual End", "Responsible Party", "Completion", "Status", "Notes","Dependencies"])
