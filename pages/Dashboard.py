@@ -163,7 +163,7 @@ layout = html.Div([
     ),
     html.Br(),
     dbc.Button(
-        "Save Ghantt Changes",
+        "Save Gantt Changes",
         id="save_ghantt_table",
         color="primary",
         n_clicks =0
@@ -173,7 +173,7 @@ layout = html.Div([
     html.Div(
         className="grid-container",
         children=[
-            html.H2("RAIL Table", className="section-title"),
+            html.H2("Action Item Table", className="section-title"),
             Ghant_fac.Rail_Table(RAIL_df),
             html.Br(),
             html.Div(
@@ -213,7 +213,7 @@ layout = html.Div([
 
             ),
             dbc.Button(
-                "Save RAIL changes",
+                "Save Action List changes",
                 id="Save_Rail_Btn",
                 color="primary"
             ),

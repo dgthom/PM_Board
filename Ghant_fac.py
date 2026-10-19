@@ -299,7 +299,8 @@ def build_grid(df, page):
         },
         {
         "headerName": "Planned End", 
-        "field": "Planned End", 
+        "field": "Planned End",
+        "cellDataType": "dateString", 
         "editable": True,},
         {
         "headerName": "Duration", 
@@ -310,20 +311,15 @@ def build_grid(df, page):
         {
         "headerName": "Actual Start", 
         "field": "Actual Start", 
-        "editable": True,            
-        "cellEditor": "agDateCellEditor",
-            "cellEditorParams": {
-                "useLocalTime": True
-                    }
+        "editable": True,
+        "cellDataType": "dateString"            
         },
         {
         "headerName": "Actual End", 
         "field": "Actual End", 
-        "editable": True, 
-        "cellEditor": "agDateCellEditor",
-            "cellEditorParams": {
-                "useLocalTime": True
-                    }
+        "editable": True,
+        "cellDataType": "dateString"
+
         },
         {"headerName": "Responsible Party", "field": "Responsible Party", "editable": True, },
         {"headerName": "Status", "field": "Status", "editable": True,"cellEditor": "agSelectCellEditor",
