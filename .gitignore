@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+
+.vscode/
+
+*.log
+
+.idea/
+
+.DS_Store
+
+# User specific settings
+config.json
+
+# Project data
+projects/
+exports/
+``

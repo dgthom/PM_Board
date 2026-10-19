@@ -1,0 +1,378 @@
+/* Global app background + text */
+body {
+    background-color: #222222;
+    color: #ffffff;
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Links / accents */
+a {
+    color: #1f77b4;
+}
+a:hover {
+    color: #17becf;
+}
+
+/* Cards / containers (no global div override!) */
+.app-container,
+.card {
+    background-color: #303030;
+    color: #ffffff;
+}
+
+
+/* Inputs */
+input,
+select,
+textarea {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1f77b4;
+    outline: none;
+}
+
+/* Dash DataTable */
+.dash-table-container .dash-spreadsheet {
+    background-color: #222222;
+    color: #ffffff;
+}
+.dash-table-container .dash-spreadsheet td,
+.dash-table-container .dash-spreadsheet th {
+    border-color: #444444;
+}
+.dash-table-container .dash-spreadsheet tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+/* Plotly graph container */
+.js-plotly-plot,
+.plotly-graph-div {
+    background-color: #222222 !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #222222;
+}
+::-webkit-scrollbar-thumb {
+    background: #444444;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}
+
+/* ============================
+   AG GRID DARKLY THEME
+   ============================ */
+
+/* Alpine theme variables */
+.ag-theme-alpine {
+    --ag-background-color: #222222;
+    --ag-foreground-color: #ffffff;
+
+    --ag-header-background-color: #303030;
+    --ag-header-foreground-color: #ffffff;
+
+    --ag-border-color: #444444;
+
+    --ag-row-hover-color: #2f2f2f;
+    --ag-selected-row-background-color: #1f77b4;
+
+    --ag-cell-horizontal-padding: 8px;
+    --ag-cell-vertical-padding: 6px;
+
+    --ag-font-size: 14px;
+    --ag-font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Alternating rows */
+.ag-theme-alpine .ag-row-even {
+    background-color: #2a2a2a;
+}
+.ag-theme-alpine .ag-row-odd {
+    background-color: #242424;
+}
+
+/* Dropdowns */
+.ag-theme-alpine .ag-select-list-item {
+    background-color: #303030;
+    color: #ffffff;
+}
+.ag-theme-alpine .ag-select-list-item:hover {
+    background-color: #1f77b4;
+    color: #ffffff;
+}
+
+/* Force text visibility inside AG Grid */
+.ag-theme-alpine .ag-cell,
+.ag-theme-alpine .ag-header-cell,
+.ag-theme-alpine .ag-header-group-cell,
+.ag-theme-alpine .ag-row {
+    color: #ffffff !important;
+}
+
+/* Editors */
+.ag-theme-alpine .ag-input-field-input {
+    color: #ffffff !important;
+    background-color: #303030 !important;
+}
+.ag-theme-alpine .ag-input-field-input::placeholder {
+    color: #cccccc !important;
+}
+/* Allow custom cellStyle colours to use black text */
+.ag-cell[style*="background-color"] {
+    color: #000000 !important;
+}
+
+.kpi-row{
+	display: flex;
+	gap: 15px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.kpi-card{
+	flex: 1;
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+	background-color: #303030;
+	border: 1px solid #444;
+}
+
+/* ------------------------------
+   Dash Core Components – Inputs
+   ------------------------------ */
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+textarea,
+.Select-control,
+.Select-menu-outer,
+.Select-value-label,
+.Select-placeholder {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    border: 1px solid #444444 !important;
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Focus state */
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+.Select-control:focus-within {
+    border-color: #1f77b4 !important;
+    outline: none !important;
+}
+
+/* Placeholder text */
+input::placeholder,
+textarea::placeholder,
+.Select-placeholder {
+    color: #cccccc !important;
+}
+
+/* ------------------------------
+   Dash Dropdown (react-select)
+   ------------------------------ */
+
+.Select-control {
+    background-color: #2b2b2b !important;
+    border: 1px solid #444444 !important;
+}
+
+.Select-menu-outer {
+    background-color: #303030 !important;
+    border: 1px solid #444444 !important;
+}
+
+.Select-option {
+    background-color: #303030 !important;
+    color: #ffffff !important;
+}
+
+.Select-option:hover {
+    background-color: #1f77b4 !important;
+    color: #ffffff !important;
+}
+
+.Select-value-label {
+    color: #ffffff !important;
+}
+
+/* Dropdown arrow */
+.Select-arrow {
+    border-color: #ffffff transparent transparent !important;
+}
+/* -----------------------------------------
+   DASH DROPDOWN (wrapper)
+   ----------------------------------------- */
+
+.dash-dropdown {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    border: 1px solid #444444 !important;
+    border-radius: 4px;
+}
+
+/* -----------------------------------------
+   React-Select internal elements
+   ----------------------------------------- */
+
+.dash-dropdown .Select-control {
+    background-color: #2b2b2b !important;
+    border: 1px solid #444444 !important;
+    color: #ffffff !important;
+}
+
+
+.dash-dropdown .Select-value-label {
+    color: #ffffff !important;
+}
+
+.dash-dropdown .Select-menu-outer {
+    background-color: #303030 !important;
+    border: 1px solid #444444 !important;
+}
+
+.dash-dropdown .Select-option {
+    background-color: #303030 !important;
+    color: #ffffff !important;
+}
+
+.dash-dropdown .Select-option:hover {
+    background-color: #1f77b4 !important;
+    color: #ffffff !important;
+}
+
+/* Dropdown arrow */
+.dash-dropdown .Select-arrow {
+    border-color: #ffffff transparent transparent !important;
+}
+
+/* Focus state */
+.dash-dropdown .Select-control:focus-within {
+    border-color: #1f77b4 !important;
+}
+
+/* Override Dash's native dropdown placeholder */
+.dash-dropdown-placeholder {
+    color: #ffffff !important;
+    opacity: 0.8 !important;
+}
+
+/* Ensure selected value text is also white */
+.dash-dropdown-value {
+    color: #ffffff !important;
+}
+.dash-dropdown-menu,
+.dash-dropdown-menu-container,
+.dash-dropdown-menu-item {
+    background-color: #303030 !important;
+}
+.mantine-Select-dropdown {
+    background-color: #303030 !important;
+    border: 1px solid #444444 !important;
+    color: #ffffff !important;
+}
+
+.mantine-Select-item {
+    background-color: #303030 !important;
+    color: #ffffff !important;
+}
+
+.mantine-Select-item:hover {
+    background-color: #1f77b4 !important;
+}
+/* Search bar container */
+.dash-dropdown-grid-container,
+.dash-dropdown-search-container {
+    background-color: #303030 !important;
+    border: 1px solid #444444 !important;
+    color: #ffffff !important;
+}
+
+/* Search input */
+.dash-dropdown-search {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+    border: 1px solid #444444 !important;
+}
+
+.dash-dropdown-search::placeholder {
+    color: #cccccc !important;
+}
+
+/* Options list container */
+.dash-options-list,
+.dash-dropdown-options {
+    background-color: #303030 !important;
+    border: 1px solid #444444 !important;
+    color: #ffffff !important;
+}
+
+/* Individual option rows */
+.dash-options-list-option,
+.dash-dropdown-option {
+    background-color: #303030 !important;
+    color: #ffffff !important;
+    padding: 6px 10px !important;
+}
+
+/* Option hover */
+.dash-options-list-option:hover,
+.dash-dropdown-option:hover {
+    background-color: #1f77b4 !important;
+    color: #ffffff !important;
+}
+
+/* Option text */
+.dash-options-list-option-text span {
+    color: #ffffff !important;
+}
+
+/* Radio/check icons */
+.dash-options-list-option-checkbox {
+    accent-color: #1f77b4 !important;
+}
+
+.dash-dropdown-grid-container,
+.dash-dropdown-search-container {
+    background-color: #303030 !important;
+    border: 1px solid #444444 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+}
+
+/* Dashboard Metadata Panel */
+#dashboard-metadata-panel {
+    background-color: #303030;      /* same as cards/containers */
+    color: #ffffff;                 /* consistent text color */
+    padding: 15px;
+    border: 1px solid #444444;      /* same border tone */
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Each metadata row */
+#dashboard-metadata-panel div {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Label + value formatting */
+#dashboard-metadata-panel span {
+    font-weight: 600;               /* subtle emphasis */
+    color: #ffffff;
+}

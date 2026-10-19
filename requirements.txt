@@ -1,0 +1,7 @@
+dash==4.4.1
+dash_ag_grid==35.3.0
+dash_bootstrap_components==1.6.0
+networkx==3.7
+numpy==2.5.4
+pandas==3.0.6
+plotly==7.1.0
