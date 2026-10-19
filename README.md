@@ -10,15 +10,15 @@ Not having access to project planning and management tools I decided to build a 
 
 ### Schedule Dashboard
 
-![ScheduleDashboard](docs/images/Schedule_DashBoard.png)
+![ScheduleDashboard](Docs/images/Schedule_DashBoard.png)
 
 ### Action Item List
 
-![ActionItems](docs/images/ActionItems.png)
+![ActionItems](Docs/images/ActionItems.png)
 
 ### Critical Path Visualisation
 
-![CriticalPath](docs/images/Critical_Path_View.png)
+![CriticalPath](Docs/images/Critical_Path_View.png)
 
 ## Features
 
